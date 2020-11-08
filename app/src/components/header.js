@@ -1,10 +1,11 @@
-import '../sass/index.scss';
-import button from './button'
-const header = () => {
+import '../sass/header.scss';
+//import button from './button'
+const Header = () => {
+
   const headerElement = document.createElement( 'header' );
   headerElement.setAttribute("class", "header")
-  headerElement.appendChild(button())
-  document.body.appendChild( headerElement )
+  //headerElement.appendChild(button())
+  return headerElement
 };
 
-export default header
+export default Header
